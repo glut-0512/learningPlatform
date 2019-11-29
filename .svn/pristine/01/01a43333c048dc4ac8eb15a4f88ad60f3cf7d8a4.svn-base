@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人设置</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/choice.css" rel="stylesheet" />
+		<link type="text/css" href="css/user_nav.css" rel="stylesheet" />
+		<link type="text/css" href="css/my_set_up.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/headerUser.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="details_content">
+	    	<div class="opc_left">
+				<div class="opcl_top">
+					<div class="opcl_img">
+						<img src="img/course_teacher_01.png" />
+					</div>
+					<div class="opcl_id">
+                        <h2 id="loginName"></h2>
+                        <input type="hidden" id="userId" value="${user_session.id }">
+						<p>学生</p>
+					</div>
+				</div>
+				<div class="opcl_bottom">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<div class="opcl_title">
+				    			<i class="opc_book"></i>
+				    			<a href="learning">我的课程</a>
+				    			<div class="clearfix"></div>
+				    		</div>
+		    			</li>
+		    			<li>
+		    				<div class="opcl_text">
+			    				<span><i></i></span>
+			    				<a href="learning">学习的课程</a>
+			    				<div class="clearfix"></div>
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div class="opcl_text">
+			    				<span><i></i></span>
+			    				<a id="showCollection" href="javascript:;">收藏的课程</a>
+			    				<div class="clearfix"></div>
+		    				</div>
+		    			</li>
+						<div class="collection">
+							<a href="collection_course">
+								<div class="collection_box">
+									<i><img src="img/stars_img_01.png" /></i>
+									<p>人力职员管理</p>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+							<a href="collection_course">
+								<div class="collection_box">
+									<i><img src="img/stars_img_01.png" /></i>
+									<p>电子商务</p>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+							<a href="collection_course">
+								<div class="collection_box">
+									<i><img src="img/stars_img_01.png" /></i>
+									<p>室内设计</p>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+		    		</ul>
+		    	</div>
+		    	<div class="opcl_bottom op_red">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<div class="opcl_title">
+				    			<i class="opc_set"></i>
+				    			<a href="my_set_up">个人设置</a>
+				    			<div class="clearfix"></div>
+				    		</div>
+		    			</li>
+		    		</ul>
+		    	</div>
+			</div>
+		    <div class="set_up">
+		    	<div class="set_up_title">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<a class="lpt_bg" href="my_set_up">基础信息</a>
+		    			</li>
+						<li>
+							<a href="my_portrait">头像设置</a>
+						</li>
+						<li>
+							<a href="new_password">密码设置</a>
+						</li>
+						<div class="clearfix"></div>
+		    		</ul>
+		    	</div>
+		    	<div class="set_up_content">
+		    		<ul class="list-unstyled">
+			    		<li>
+			    			<label>是否全日制：</label>
+			    			<div class="privacy">
+			    				<div class="radio radio-danger">
+	                                <input type="radio" name="privacy" value="option" checked>
+	                                <label></label>
+	                            </div>
+			    			</div>
+			    			<span>全日制</span>
+			    			<div class="privacy">
+			    				<div class="radio radio-danger">
+	                                <input type="radio" name="privacy" value="option">
+	                                <label></label>
+	                            </div>
+			    			</div>
+			    			<span>非全日制</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>登录名：</label>
+			    			<span>XXX</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>所在学校：</label>
+			    			<span>桂林理工大学</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>在读学历：</label>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r school_width" data-toggle="dropdown" href="javascript:;"><span>--请选择--</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap school_choice">
+			                        			<dd><a href="javascript:;">--请选择--</a></dd>
+			                        			<dd><a href="javascript:;">小学</a></dd>
+					                            <dd><a href="javascript:;">初中</a></dd>
+					                            <dd><a href="javascript:;">高中</a></dd>
+												<dd><a href="javascript:;">专科</a></dd>
+												<dd><a href="javascript:;">本科</a></dd>
+					                            <dd><a href="javascript:;">硕士</a></dd>
+					                            <dd><a href="javascript:;">博士</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>所在专业：</label>
+			    			<input type="text" class="input_text" value="" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>入学时间：</label>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r time_width" data-toggle="dropdown" href="javascript:;"><span>2011</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap time_choice">
+			                        			<dd><a href="javascript:;">2011</a></dd>
+			                        			<dd><a href="javascript:;">2012</a></dd>
+					                            <dd><a href="javascript:;">2013</a></dd>
+					                            <dd><a href="javascript:;">2014</a></dd>
+												<dd><a href="javascript:;">2015</a></dd>
+												<dd><a href="javascript:;">2016</a></dd>
+					                            <dd><a href="javascript:;">2017</a></dd>
+					                            <dd><a href="javascript:;">2018</a></dd>
+												<dd><a href="javascript:;">2019</a></dd>
+                                                <dd><a href="javascript:;">2020</a></dd>
+                                                <dd><a href="javascript:;">2021</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<span>年</span>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r time_width" data-toggle="dropdown" href="javascript:;"><span>1</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap time_choice">
+			                        			<dd><a href="javascript:;">1</a></dd>
+			                        			<dd><a href="javascript:;">2</a></dd>
+					                            <dd><a href="javascript:;">3</a></dd>
+					                            <dd><a href="javascript:;">4</a></dd>
+												<dd><a href="javascript:;">5</a></dd>
+												<dd><a href="javascript:;">6</a></dd>
+					                            <dd><a href="javascript:;">7</a></dd>
+					                            <dd><a href="javascript:;">8</a></dd>
+					                            <dd><a href="javascript:;">9</a></dd>
+												<dd><a href="javascript:;">10</a></dd>
+					                            <dd><a href="javascript:;">11</a></dd>
+					                            <dd><a href="javascript:;">12</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<span>月</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>通讯地址：</label>
+			    			<input type="text" class="input_text address" value="" placeholder="请填写完整的通讯地址，确保您能收到我们邮寄的证书" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>昵称：</label>
+			    			<input type="text" class="input_text" value="老张" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>手机：</label>
+			    			<input type="text" class="input_text" value="1388888888" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+						<li>
+							<label>邮箱：</label>
+							<input type="text" class="input_text" value="help.163.com" maxlength="50" />
+							<div class="clearfix"></div>
+						</li>
+			    		<li>
+			    			<label>性别：</label>
+			    			<div class="privacy">
+			    				<div class="radio radio-danger">
+	                                <input type="radio" name="sex" value="option" checked>
+	                                <label></label>
+	                            </div>
+			    			</div>
+			    			<span>男</span>
+			    			<div class="privacy">
+			    				<div class="radio radio-danger">
+	                                <input type="radio" name="sex" value="option">
+	                                <label></label>
+	                            </div>
+			    			</div>
+			    			<span>女</span>
+			    			<div class="privacy">
+			    				<div class="radio radio-danger">
+	                                <input type="radio" name="sex" value="option">
+	                                <label></label>
+	                            </div>
+			    			</div>
+			    			<span>保密</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>生日：</label>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r time_width" data-toggle="dropdown" href="javascript:;"><span>2011</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap time_choice">
+												<dd><a href="javascript:;">2001</a></dd>
+												<dd><a href="javascript:;">2002</a></dd>
+												<dd><a href="javascript:;">2003</a></dd>
+												<dd><a href="javascript:;">2004</a></dd>
+												<dd><a href="javascript:;">2005</a></dd>
+												<dd><a href="javascript:;">2006</a></dd>
+												<dd><a href="javascript:;">2007</a></dd>
+												<dd><a href="javascript:;">2008</a></dd>
+												<dd><a href="javascript:;">2009</a></dd>
+												<dd><a href="javascript:;">2010</a></dd>
+			                        			<dd><a href="javascript:;">2011</a></dd>
+			                        			<dd><a href="javascript:;">2012</a></dd>
+					                            <dd><a href="javascript:;">2013</a></dd>
+					                            <dd><a href="javascript:;">2014</a></dd>
+												<dd><a href="javascript:;">2015</a></dd>
+												<dd><a href="javascript:;">2016</a></dd>
+					                            <dd><a href="javascript:;">2017</a></dd>
+					                            <dd><a href="javascript:;">2018</a></dd>
+												<dd><a href="javascript:;">2019</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<span>年</span>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r time_width" data-toggle="dropdown" href="javascript:;"><span>1</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap time_choice">
+			                        			<dd><a href="javascript:;">1</a></dd>
+			                        			<dd><a href="javascript:;">2</a></dd>
+					                            <dd><a href="javascript:;">3</a></dd>
+					                            <dd><a href="javascript:;">4</a></dd>
+												<dd><a href="javascript:;">5</a></dd>
+												<dd><a href="javascript:;">6</a></dd>
+					                            <dd><a href="javascript:;">7</a></dd>
+					                            <dd><a href="javascript:;">8</a></dd>
+					                            <dd><a href="javascript:;">9</a></dd>
+												<dd><a href="javascript:;">10</a></dd>
+					                            <dd><a href="javascript:;">11</a></dd>
+					                            <dd><a href="javascript:;">12</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<span>月</span>
+			    			<span class="set_up_school">
+			    				<ul class="list-unstyled">
+				    				<li class="dropdown school_title" id="accountmenu">
+				                        <a class="dropdown-toggle set_up_r time_width" data-toggle="dropdown" href="javascript:;"><span>1</span>&nbsp;<b class="caret"></b></a>
+			                        	<dl class="dropdown-menu">
+			                        		<div class="dropdown_wrap time_choice">
+			                        			<dd><a href="javascript:;">1</a></dd>
+			                        			<dd><a href="javascript:;">2</a></dd>
+					                            <dd><a href="javascript:;">3</a></dd>
+					                            <dd><a href="javascript:;">4</a></dd>
+												<dd><a href="javascript:;">5</a></dd>
+												<dd><a href="javascript:;">6</a></dd>
+					                            <dd><a href="javascript:;">7</a></dd>
+					                            <dd><a href="javascript:;">8</a></dd>
+					                            <dd><a href="javascript:;">9</a></dd>
+												<dd><a href="javascript:;">10</a></dd>
+					                            <dd><a href="javascript:;">11</a></dd>
+					                            <dd><a href="javascript:;">12</a></dd>
+			                        			<dd><a href="javascript:;">13</a></dd>
+					                            <dd><a href="javascript:;">14</a></dd>
+					                            <dd><a href="javascript:;">15</a></dd>
+												<dd><a href="javascript:;">16</a></dd>
+												<dd><a href="javascript:;">17</a></dd>
+					                            <dd><a href="javascript:;">18</a></dd>
+					                            <dd><a href="javascript:;">19</a></dd>
+					                            <dd><a href="javascript:;">20</a></dd>
+												<dd><a href="javascript:;">21</a></dd>
+					                            <dd><a href="javascript:;">22</a></dd>
+					                            <dd><a href="javascript:;">23</a></dd>
+					                            <dd><a href="javascript:;">24</a></dd>
+												<dd><a href="javascript:;">25</a></dd>
+					                            <dd><a href="javascript:;">26</a></dd>
+					                            <dd><a href="javascript:;">27</a></dd>
+					                            <dd><a href="javascript:;">28</a></dd>
+												<dd><a href="javascript:;">29</a></dd>
+					                            <dd><a href="javascript:;">30</a></dd>
+					                            <dd><a href="javascript:;">31</a></dd>
+			                        		</div>
+				                        </dl>
+				                    </li>
+				                </ul>
+			    			</span>
+			    			<span>日</span>
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>个人简介：</label>
+			    			<textarea class="input_introduce" placeholder="告诉我们您的情况，例如您的工作，感兴趣的事情以及您希望通过学习课程达到什么目标。"></textarea>
+			    			<div class="clearfix"></div>
+			    			<div class="btn-icon" onclick="subUserInfo()">
+				    			<a>提交</a>
+				    		</div>
+			    		</li>
+			    	</ul>
+		    	</div>
+		    </div>
+		    <div class="clearfix"></div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/page.js"></script>
+	<script src="js/my_set_up.js"></script>
+</html>

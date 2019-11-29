@@ -1,0 +1,57 @@
+$(function() {
+	
+	function lhxDropDown(e){
+		$(document).ready(function(){
+			$(e +' li').hover(function(){
+				$(this).children("ul").show(); //mouseover
+			},function(){
+				$(this).children("ul").hide(); //mouseout
+			});
+		});
+	}
+	lhxDropDown('.drop_down');
+	
+	
+	$(".header_nav .drop_down li ul li").hover(function() {
+		$(this).children(".nav_abg").stop(true).animate({
+			width:"100%"
+		}, 300);
+	},function(){
+		$(this).children(".nav_abg").stop(true).animate({
+			width:"0%"
+		}, 300);
+	});
+	
+	$("input").focus(function() {
+		$(this).parent().addClass("highlight");
+		$(".login_tips").removeClass("password_show");
+	});
+	
+	$("input").blur(function() {
+		$(this).parent().removeClass("highlight");
+	});
+	
+	$(".cuo_icon").click(function(){
+		$(this).prev().val("");
+		$(this).addClass("cuo_none");
+	});
+	
+	$('input').bind('input propertychange', function() {
+		if($(this).val()) {
+			$(this).next().removeClass("cuo_none");
+		} else {
+			$(this).next().addClass("cuo_none");
+		}
+	})
+	
+	$(".jianpan_icon").click(function(){
+		$(this).parent().next().toggleClass("cuo_none");
+	});
+	
+	$(document).on("click", function(evt) {
+		if($(evt.target).closest(".password").length == 0) {
+			$('.virtual_keyboard').addClass("cuo_none");
+		}
+	});
+
+});

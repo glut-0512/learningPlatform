@@ -1,0 +1,290 @@
+
+/*----------------ability_test start------------------*/
+.details_content
+{
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;
+	padding-bottom: 50px;
+	height: 100%;
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+
+.set_up{
+	width: 960px;
+	float: right;
+	padding: 0px 40px 0px 0px ;
+}
+
+.set_up_title
+{
+	border-bottom: 1px solid #eaeaea;
+}
+
+.set_up_title ul
+{
+	margin: 0px;
+}
+
+.set_up_title ul li
+{
+	float: left;
+}
+
+.set_up_title ul li a
+{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.set_up_title ul li .lpt_bg
+{
+	color: #4195f2;
+}
+
+.set_up_content
+{
+	min-height: 560px;
+	padding: 20px 15px;
+}
+
+.set_up_content ul
+{
+	margin: 0px;
+}
+
+.set_up_content ul li
+{
+	margin-bottom: 10px;
+}
+
+.set_up_content ul li label
+{
+	text-align: right;
+	float: left;
+	width: 100px;
+	font-size: 14px;
+	color: #434d57;
+	font-weight: 400;
+	margin-right: 10px;
+
+}
+
+.set_up_content ul li span
+{
+	float: left;
+	display: block;
+	margin: 0px 10px 0px 0px;
+}
+
+.privacy
+{
+	float: left;
+}
+
+.privacy .radio {
+    margin: 7px 0px 0px 0px;
+    float: left;
+    cursor: pointer;
+}
+
+.set_up_content ul li .privacy .radio label{
+	width: 0px;
+	margin: 0px;
+}
+
+.set_up_content ul li .privacy .radio input{
+	margin: 0px 0px 0px -20px;
+}
+
+.set_up_r
+{
+	display: block;
+	border: 1px solid #000000;
+	padding: 0px 10px;
+	background-color: #FFFFFF;
+}
+
+.school_width
+{
+	width: 300px;
+}
+
+.time_width
+{
+	width: 80px;
+}
+
+.dropdown-toggle b
+{
+	float: right;
+	margin-top: 14px;
+}
+
+.school_title dl
+{
+	margin-top: 10px;
+	background-color: #434d57;
+}
+
+.school_choice
+{
+	width: 300px;
+}
+
+.time_choice
+{
+	width: 80px;
+}
+
+.set_up_content ul li dl dd
+{
+	line-height: 30px;
+	margin: 0px;
+}
+
+.set_up_content ul li
+{
+	line-height: 32px;
+}
+
+.dropdown
+{
+	margin: 0px;
+}
+
+.dropdown-menu
+{
+	margin-top: 5px;
+}
+
+.dropdown_wrap
+{
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.dropdown_wrap dd a
+{
+	color: #FFFFFF;
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.dropdown_wrap dd a:hover
+{
+	background-color: rgba(255,255,255,0.1);
+	color: #FFFFFF;
+}
+
+.set_up_school ul .school_title
+{
+	margin: 0px;
+}
+
+.set_up_school .dropdown-menu:before
+{
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #434d57;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -7px;
+    right: 9px;
+}
+
+.set_up_school .dropdown-menu:after
+{
+    content: '';
+    display: inline-block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #434d57;
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+.set_up_school a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.set_up_content ul li .input_text,.set_up_content ul li .input_introduce
+{
+	outline: none;
+	border: 1px solid #000000;  
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	padding: 0px 10px;
+	width: 300px; 
+}
+
+.set_up_content ul li .input_text:focus,.set_up_content ul li .input_introduce:focus
+{
+	-webkit-transition:border linear 0.2s,-webkit-box-shadow linear 0.5s; 
+	border-color:rgba(175,212,247,0.8);
+	border-width: 1px;
+	-webkit-box-shadow:0 0 18px rgba(175,212,247,0.4); 
+}
+
+.set_up_content ul li .address
+{
+	width: 600px;
+}
+
+.set_up_content ul li .input_introduce
+{
+	width: 600px;
+	height: 130px;
+	resize: none;	
+}
+
+.btn-icon{
+	display: block;
+	width: 120px;
+	height: 40px;
+	background: #4a80bd;
+	text-align: center;
+	margin: 0 auto;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari 和 Chrome */
+	border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	cursor: pointer;
+}
+
+.btn-icon a{
+	color: #fff;
+	line-height: 40px;
+	font-size: 18px;
+	text-decoration: none;	
+}
+
+.pass_icon{
+	display: block;
+	width: 120px;
+	height: 40px;
+	background: #4a80bd;
+	margin: 50px 0px 0px 290px;
+	text-align: center;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari 和 Chrome */
+	border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	cursor: pointer;
+}
+
+.pass_icon a{
+	color: #fff;
+	line-height: 40px;
+	font-size: 18px;
+	text-decoration: none;	
+}

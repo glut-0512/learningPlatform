@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>专业类型</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/choice.css" rel="stylesheet" />
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/professional_type.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="body_bg"></div>
+	    <div class="details_content">
+	    	<div class="details_left">
+		    	<div class="dl_content">
+		    		<div class="dl_content_top">
+		    			<i class="icon-book"></i>
+		    			<h1>学科分裂</h1>
+		    			<div class="clearfix"></div>
+		    		</div>
+		    		<ul class="list-unstyled">
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>工商管理</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>国际旅游与酒店管理</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>国际经济与贸易</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>会计学</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>人力资源管理</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>电子商务</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>工程造价管理</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>建筑工程</p>
+						</li>
+						<li>
+							<div class="checkbox_course">
+								<input type="checkbox" name="check-box" />
+							</div>
+							<p>室内设计</p>
+						</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="professional">
+				<div class="search_b1">
+					<form>
+						<input type="text" placeholder="按关键字搜索">
+						<button type="submit"></button>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+				<ul class="list-unstyled">
+					<li>
+						<div class="title">
+							<h1>ppt</h1>
+						</div>
+						<dl class="list-unstyled">
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_ppt.png" />
+									<p>非门逻辑功能测试-PPT课件.ppt</p>
+								</a>
+							</dd>
+							<div class="clearfix"></div>
+						</dl>
+					</li>
+					<li>
+						<div class="title">
+							<h1>图片</h1>
+						</div>
+						<dl class="list-unstyled">
+							<dd>
+								<a href="#">
+									<img src="img/icon_jpg.png" />
+									<p>01-25-1-熔断器外壳图.jpg</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_jpg.png" />
+									<p>01-25-1-熔断器外壳图.jpg</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_jpg.png" />
+									<p>01-25-1-熔断器外壳图.jpg</p>
+								</a>
+							</dd>
+							<div class="clearfix"></div>
+						</dl>
+					</li>
+					<li>
+						<div class="title">
+							<h1>动画</h1>
+						</div>
+						<dl class="list-unstyled">
+							<dd>
+								<a href="#">
+									<img src="img/icon_swf.png" />
+									<p>空调电气控制原理动画.swf</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_swf.png" />
+									<p>空调电气控制原理动画.swf</p>
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<img src="img/icon_swf.png" />
+									<p>空调电气控制原理动画.swf</p>
+								</a>
+							</dd>
+							<div class="clearfix"></div>
+						</dl>
+					</li>
+					<li>
+						<div class="title">
+							<h1>试卷</h1>
+						</div>
+						<dl class="list-unstyled">
+							<dd>
+								<a href="#">
+									<img src="img/icon_pdf.png" />
+									<p>机床线路检测试卷.pdf</p>
+								</a>
+							</dd>
+							<div class="clearfix"></div>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		    <div class="clearfix"></div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/professional_type.js"></script>
+</html>

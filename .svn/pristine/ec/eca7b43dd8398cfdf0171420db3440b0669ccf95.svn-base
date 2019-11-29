@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>社区学院</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+    <link type="text/css" href="css/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/header.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="banner container-fluid">
+    <img src="img/banner.png" />
+</div>
+<div class="broadcast_bg">
+    <div class="broadcast_content">
+        <div class="broadcast_img">
+            <a href="#">
+                <img src="img/broadcast_img_01.png" alt="First slide">
+            </a>
+        </div>
+        <div class="broadcast_text">
+            <h1>直播时间：</h1>
+            <h2></h2>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">直播讲堂</a>
+                </li>
+                <li>
+                    <a href="#">预约直播</a>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <p title="致力于打造全民学习的互动直播平台,以多样的教学项目、优质的直播内容、极致的互动体验,满足用户AR、VR等热门前沿科技的观看。">致力于打造全民学习的互动直播平台,以多样的教学项目、优质的直播内容、极致的互动体验,满足用户AR、VR等热门前沿科技的观看。</p>
+        </div>
+    </div>
+</div>
+<div class="curriculum container-fluid">
+    <div class="curriculum_content">
+        <div class="content_top">
+            <div class="content_top_title">
+                <img src="img/curriculum_01.png" />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="curriculum_bottom">
+        <ul class="list-unstyled">
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <ul class="list-unstyled two_top">
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="curriculum_img">
+                        <img src="img/curriculum_img_01.jpg" />
+                    </div>
+                </a>
+                <p>《数据结构》</p>
+                <div class="school">
+                    <a href="#">
+                        <h5 class="school_left">
+                            <span><img src="img/curriculum_icon.png" /></span>
+                            理查德布莱曼
+                        </h5>
+                    </a>
+                    <h5 class="school_right">教授</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <div class="more_curriculum">
+        <a href="#">更多课程</a>
+    </div>
+</div>
+<div class="resources">
+    <div class="resources_top">
+        <img src="img/resources_top_img.png" />
+        <div class="clearfix"></div>
+    </div>
+    <div class="resources_content">
+        <ul class="list-unstyled">
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_01.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_01.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>教学PPT</p>
+                </div>
+            </li>
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_02.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_02.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>教学图片</p>
+                </div>
+            </li>
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_03.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_03.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>教学动画</p>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <ul class="list-unstyled">
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_04.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_04.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>实训指导</p>
+                </div>
+            </li>
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_05.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_05.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>虚拟实训</p>
+                </div>
+            </li>
+            <li>
+                <div class="resources_box">
+                    <img src="img/resources_06.png" />
+                    <div class="resources_mask"></div>
+                    <div class="resources_icon">
+                        <img src="img/resources_icon_06.png" />
+                    </div>
+                </div>
+                <div class="resources_text">
+                    <p>教学视频</p>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+<div class='footer'>
+    <div class='footer_wrap'>
+        <ul class="list-unstyled">
+            <li>
+                <p><a href="#">成人高考考试科目</a></p>
+                <p><a href="#">培训中心简介</a></p>
+                <p><a href="#">考试资讯</a></p>
+            </li>
+            <li>
+                <p>友情链接:</p>
+                <p><a href="#">广西招生考试院</a></p>
+                <p><a href="#">广西自学考试网上系统</a></p>
+                <p><a href="#">中国高等教育学生信息网</a></p>
+                <p><a href="#">中国教育网</a></p>
+                <p><a href="#">广西人事考试网</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <script type="text/javascript" src="js/footer.js"></script> -->
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</html>

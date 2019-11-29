@@ -1,0 +1,9 @@
+package com.glut.learningplatform.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.glut.learningplatform.entity.FileManagers;
+
+public interface FileManagerService extends IService<FileManagers> {
+
+    String selectFilePathByFileName(String fileName);
+}

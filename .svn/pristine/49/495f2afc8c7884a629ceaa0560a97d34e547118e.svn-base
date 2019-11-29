@@ -1,0 +1,28 @@
+$(function() {	
+	$('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+	$.fn.toggleCheckbox = function () {
+	    this.attr('checked', !this.attr('checked'));
+	}
+	$('.check-box').on('click', function () {
+	    $(this).find(':checkbox').toggleCheckbox();
+	    $(this).toggleClass('checkedBox');
+	});
+	
+	$(".dlc_none .dl_content_top").click(function(){
+	    $(this).next("ul").slideToggle();
+	    var dlcName = $(this).find("h5").attr("class");
+	    if(dlcName == "icon-caret-down dlc_down"){
+	    	$(this).find("h5").attr("class","icon-caret-down dlc_up");
+	    }
+	    else{
+	    	$(this).find("h5").attr("class","icon-caret-down dlc_down");
+	    }
+	});
+	
+	//分页
+	 var GG = {
+        "kk":function(mm){
+        }
+    }
+    $("#page").initPage(35,1,GG.kk);
+});

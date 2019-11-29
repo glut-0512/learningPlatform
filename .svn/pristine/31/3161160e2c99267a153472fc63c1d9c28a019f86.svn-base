@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/softkeys-0.0.1.css" rel="stylesheet"/>
+    <link type="text/css" href="icon/iconfont.css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/login.css}"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class='header_bg'>
+    <div class='nav_wrap'>
+        <div class='logo'>
+            <img src='img/logo.png' />
+        </div>
+        <div class='header_nav'>
+            <ul class='list-unstyled drop_down'>
+                <li class="nav_01">
+                    <a href='index'>首页</a>
+                </li>
+                <li class="nav_01">
+                    <a href='#'>教学资源</a>
+                </li>
+                <li class="nav_01">
+                    <a href='#'>学习进度</a>
+                </li>
+                <li class="nav_01">
+                    <a>教辅资源<i class='icon-angle-down'></i></a>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class='nav_abg'></div>
+                            <a href='javascript:;'>媒体类型<i class="icon-angle-right"></i></a>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class='nav_abg'></div>
+                                    <a href='#'>PPT</a>
+                                </li>
+                                <li>
+                                    <div class='nav_abg'></div>
+                                    <a href='#'>图片</a>
+                                </li>
+                                <li>
+                                    <div class='nav_abg'></div>
+                                    <a href='#'>动画</a>
+                                </li>
+                                <li>
+                                    <div class='nav_abg'></div>
+                                    <a href='#'>试卷</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class='nav_abg'></div>
+                            <a href='#'>专业类型</a>
+                        </li>
+                        <li>
+                            <div class='nav_abg'></div>
+                            <a href='#'>资源检索</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class='clearfix'></div>
+    </div>
+</div>
+<div class="login_contents">
+    <div class="login_wrap">
+        <div class="login_box">
+            <h1>资源管理平台</h1>
+            <div class="demarcation_line"></div>
+            <p class="login_tips">您输入的帐号或密码有误,<a href="password_back.html">忘记密码？</a></p>
+            <div class="account">
+                <i class="iconfont icon-renwu-ren user_icon"></i>
+                <input id="loginName" type="text" placeholder="手机/邮箱/用户名" />
+                <a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+            </div>
+            <div class="password">
+                <i class="iconfont icon-denglushimima denglushimima_icon"></i>
+                <input id="loginPwd" type="password" name='password_key' placeholder="密码" />
+                <a class="cuo_icon cuo_none" href="javascript:;"><i class="iconfont icon-cuo"></i></a>
+                <a href="javascript:;"><i class="iconfont icon-jianpan jianpan_icon"></i></a>
+                <div class="virtual_keyboard cuo_none">
+                    <div class="softkeys" data-target="input[name='password_key']"></div>
+                </div>
+            </div>
+            <div class="verification">
+                <i class="iconfont icon-anquan verification_icon"></i>
+                <input id="loginVerification" type="text" placeholder="验证码" />
+                <a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+            </div>
+            <div class="login_bottom">
+                <div class="code_img">
+                    <img src="img/verification_code.png" />
+                </div>
+                <div class="change_graph">
+                    <a href="javascript:;">看不清?点击换图</a>
+                </div>
+                <div class="forget">
+                    <a href="password_back.html">忘记密码？</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="login_button">
+                <a href="#">登&nbsp;&nbsp;录</a>
+            </div>
+            <div class="login_button">
+                <a href="register">没有账号？点击注册</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/keyboard.js" ></script>
+<script type="text/javascript" src="js/softkeys-0.0.1.js" ></script>
+<script src="js/login.js"></script>
+</html>

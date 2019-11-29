@@ -1,0 +1,387 @@
+body
+{
+	background: url(../img/register_bg.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+*{
+	padding:0px; 
+	margin:0px;
+}
+
+ul,p{
+	margin: 0px;
+}
+
+input{  
+	background:none;  
+	outline:none;  
+	border:0px;
+}
+
+input::-webkit-input-placeholder {
+	color: #bbbbbb;
+}
+
+input:-moz-placeholder {
+	color: #bbbbbb;
+}
+
+input::-moz-placeholder {
+	color: #bbbbbb;
+}
+
+input:-ms-input-placeholder {
+	color: #bbbbbb;
+}
+
+
+.header_bg
+{
+	background-color: rgba(255,255,255,0.8);
+	min-width: 1200px;
+	position: relative;
+	z-index: 10;
+}
+
+.nav_wrap
+{
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo
+{
+	float: left;
+	width: 190px;
+	margin: 20px 0px 0px 25px;
+}
+
+.logo img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.header_nav{
+	float: right;
+}
+
+.header_nav ul > .nav_01 a:first-child{
+	cursor: pointer;
+	color: #000000;
+	height: 98px;
+	line-height: 98px;
+}
+
+.header_nav ul .nav_01:hover a:first-child {
+	color: #ffffff;
+	background: #4a80bd;
+}
+
+.drop_down {
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+}
+
+.drop_down li {
+	float: left;
+	position: relative;
+	font-weight: bold;
+	width: 140px;
+}
+
+.drop_down li a {
+	display: block;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.drop_down li ul {
+	position: absolute;
+	float: left;
+	width: 100%;
+	display: none;
+	background: rgba(14, 80, 136, 0.5);
+	z-index: 99;
+}
+
+.drop_down li ul a {
+	width: 100%;
+	display: block;
+	text-decoration: none;
+}
+
+.drop_down li ul a:hover {
+	color: #ffffff;
+}
+
+.drop_down li ul ul {
+	top: 0;
+	right: 140px;
+}
+
+.header_nav ul.drop_down .nav_abg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4a80bd;
+	width: 0%;
+	height: 60px;
+	z-index: 1;
+}
+
+.header_nav ul.drop_down li ul li a {
+	position: relative;
+	z-index: 2;
+}
+
+.header_nav ul.drop_down a i {
+	margin-left: 15px;
+}
+
+.login_contents{
+	width: 100%;
+	min-width: 1200px;
+}
+
+.login_contents a{
+	text-decoration: none;
+}
+
+.login_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.login_img{
+	float: left;
+	width: 526px;
+	height: 432px;
+	margin: 90px 0px;
+}
+
+.login_img img{
+	width: 100%;
+}
+
+.login_box{
+	float: right;
+	width: 360px;
+	background-color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 85px;
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.login_box h1{
+	font-size: 26px;
+	color: #4a80bd;
+	text-align: center;
+	margin: 60px 0px 30px 0px;
+}
+
+.demarcation_line{
+	width: 100%;
+	height: 2px;
+	background-color: #eaeaea;
+	margin: 15px 0px;
+}
+
+.login_tips{
+	width: 294px;
+	height: 28px;
+	border: 1px solid #f599a0;
+	text-align: center;
+	line-height: 28px;
+	font-size: 12px;
+	color: #787883;
+	position: absolute;
+	top: 95px;
+	left: 34px;
+	display: none;
+}
+
+.login_tips a{
+	text-decoration: none;
+	color: #ff0000;
+}
+
+.password_show{
+	display: block;
+}
+
+.account,.password,.verification{
+	margin: 50px auto 0px;
+	width: 294px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #000000;
+	font-size: 16px;
+	line-height: 49px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.account input{
+	width: 188px;
+	height: 51px;
+	float: left;
+}
+
+.account .user_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.cuo_icon i{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px;
+	float: right;
+}
+
+.cuo_none{
+	display: none;
+}
+
+.password{
+	margin: 10px auto 0px;
+	width: 294px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #000000;
+	font-size: 16px;
+	line-height: 49px;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.password input{
+	width: 188px;
+	height: 51px;
+	float: left;
+}
+
+.password .denglushimima_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.password .cuo_icon i{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px 0px 0px;
+	float: right;
+}
+
+.password .jianpan_icon{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px 0px 0px;
+	float: right;
+}
+
+.verification{
+	margin: 10px auto 0px;
+	width: 294px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #000000;
+	font-size: 16px;
+	line-height: 49px;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.verification .verification_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.highlight{
+	border: 1px solid rgba(65,149,242,0.5);
+	-webkit-box-shadow: 0 0 3px rgba(65,149,242,0.7);  
+	-moz-box-shadow: 0 0 3px rgba(65,149,242,0.7);
+	box-shadow: 0 0 3px rgba(65,149,242,0.7);
+	border-collapse:separate !important;
+}
+
+.login_button a{
+	width: 294px;
+	height: 51px;
+	line-height: 51px;
+	text-align: center;
+	font-size: 24px;
+	background: #00a0e9;
+	display: block;
+	margin: 35px auto 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.login_bottom{
+	width: 294px;
+	margin: 20px auto 0px;
+}
+
+.code_img{
+	width: 102px;
+	height: 42px;
+	float: left;
+}
+
+.code_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.change_graph a{
+	color: #000000;
+	line-height: 42px;
+	margin-left: 10px;
+	float: left;
+}
+
+.forget{
+	float: right;
+}
+
+.forget a{
+	font-size: 12px;
+	color: #4195f2;
+	line-height: 42px;
+	text-decoration: none;
+}
+
+.virtual_keyboard{
+	width: 670px;
+	position: absolute;
+	top: 51px;
+	right: -1px;
+	background: #dcdcdc;
+	z-index: 99;
+}

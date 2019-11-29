@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>注册</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="icon/iconfont.css" rel="stylesheet" />
+		<link type="text/css" href="css/softkeys-0.0.1.css" rel="stylesheet"/>
+		<link type="text/css" href="css/register.css" rel="stylesheet" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="register">
+				<h1>注册账号</h1>
+				<div class="demarcation_line"></div>
+				<div class="account">
+					<i class="iconfont icon-renwu-ren user_icon"></i>
+					<input id="loginName" type="text" placeholder="账号" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的账号</p></div>
+				</div>
+				<div class="password">
+					<i class="iconfont icon-denglushimima denglushimima_icon"></i>
+					<input id="loginPwd_01" type="password" name='password_key_01' placeholder="密码" />
+					<a class="cuo_icon cuo_none" href="javascript:;"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的密码</p></div>
+					<a href="javascript:;"><i class="iconfont icon-jianpan jianpan_icon"></i></a>
+					<div class="virtual_keyboard cuo_none">
+						<div class="softkeys" data-target="input[name='password_key_01']"></div>
+					</div>
+				</div>
+				<div class="password">
+					<i class="iconfont icon-denglushimima denglushimima_icon"></i>
+					<input id="loginPwd_02" type="password" name='password_key_02' placeholder="确认密码" />
+					<a class="cuo_icon cuo_none" href="javascript:;"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的密码</p></div>
+					<a href="javascript:;"><i class="iconfont icon-jianpan jianpan_icon"></i></a>
+					<div class="virtual_keyboard cuo_none">
+						<div class="softkeys" data-target="input[name='password_key_02']"></div>
+					</div>
+				</div>
+				<div class="account">
+					<i class="iconfont icon-renwu-ren user_icon"></i>
+					<input id="userName" type="text" placeholder="用户名" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的用户名</p></div>
+				</div>
+				<div class="account">
+					<i class="iconfont icon-tel user_icon"></i>
+					<input id="phoneName" type="text" placeholder="手机" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的手机号</p></div>
+				</div>
+				<div class="account">
+					<i class="glyphicon glyphicon-envelope e_icon"></i>
+					<input id="mailName" type="text" placeholder="邮箱" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+					<div class="error_tips cuo_none"><p>请输入正确的邮箱号</p></div>
+				</div>
+				<div class="register_button">
+					<a href="#">注&nbsp;&nbsp;册</a>
+				</div>
+			</div>	
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/softkeys-0.0.1.js" ></script>
+	<script src="js/register.js"></script>
+</html>

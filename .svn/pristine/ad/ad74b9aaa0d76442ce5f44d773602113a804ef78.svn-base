@@ -1,0 +1,87 @@
+package com.glut.learningplatform.controller;
+
+import com.glut.learningplatform.entity.CourseType;
+import com.glut.learningplatform.service.CourseTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class RootController {
+
+    @Autowired
+    private CourseTypeService courseTypeService;
+
+    //跳转首页
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    //跳转前端页面登录
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    //跳转前端注册
+    @RequestMapping("/register")
+    public String register(){
+        return "register";
+    }
+
+    //跳转教学资源
+    @RequestMapping("/list_of_catalogues")
+    public String listOfCatalogues(HttpServletRequest request){
+        return "list_of_catalogues";
+    }
+
+    //跳转忘記密碼
+    @RequestMapping("/password_back")
+    public String passwordBack(HttpServletRequest request){
+        return "password_back";
+    }
+
+    //跳转学习进度
+    @RequestMapping("/collection_course")
+    public String collectionCourse(HttpServletRequest request){
+        return "collection_course";
+    }
+
+    //跳转专业类型
+    @RequestMapping("/professional_type")
+    public String professionalType(HttpServletRequest request) { return  "professional_type" ;}
+
+    //跳转PPT
+    @RequestMapping("/ppt")
+    public String ppt(HttpServletRequest request) { return  "ppt" ;}
+
+    //跳转jpg
+    @RequestMapping("/jpg")
+    public String jpg(HttpServletRequest request) { return  "jpg" ;}
+
+    //跳转swf
+    @RequestMapping("/swf")
+    public String swf(HttpServletRequest request) { return  "swf" ;}
+
+    //跳转pdf
+    @RequestMapping("/pdf")
+    public String pdf(HttpServletRequest request) { return  "pdf" ;}
+
+    //跳转个人设置-基础信息
+    @RequestMapping("/my_set_up")
+    public String mySetUp(HttpServletRequest request){
+        return "my_set_up";
+    }
+
+    //跳转个人设置-密码设置
+    @RequestMapping("/new_password")
+    public String newPassword(HttpServletRequest request){
+        return "new_password";
+    }
+}

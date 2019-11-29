@@ -1,0 +1,44 @@
+$(function() {
+
+    uploadFile();
+
+});
+
+
+function uploadFile(){
+    $('#submitFile').unbind().click(
+            function(e) {
+                e.preventDefault(); //取消默认动作
+                console.log("11");
+                var formData = new FormData();
+                var file = $("#file")[0].files[0];
+                if (!file) {
+                    alert('请选择文件！');
+                    return;
+                }
+                // 进度条
+                //uploadProgress(); 没有实现
+                // 模态框关闭事件
+                formData.append("file", file);
+                console.log(file);
+                //提交
+                $.ajax({
+                    url : "fileManage/uploadFile",
+                    method : 'post',
+                    data : formData ,
+                    dataType : 'json',
+                    // 告诉jQuery不要去处理发送的数据
+                    processData : false,
+                    // 告诉jQuery不要去设置Content-Type请求头
+                    contentType : false,
+                    success : function(data) {
+                        console.log(data);
+                        alert(data );
+                    },
+                    error : function() {
+                        alert('服务器异常，上传失败');
+                    }
+
+                })
+            });
+}

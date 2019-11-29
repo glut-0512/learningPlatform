@@ -1,0 +1,55 @@
+package com.glut.learningplatform.controller;
+
+import com.glut.learningplatform.entity.CourseType;
+import com.glut.learningplatform.service.CourseTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class RootController {
+
+    @Autowired
+    private CourseTypeService courseTypeService;
+
+    //跳转首页
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    //跳转前端页面登录
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    //跳转前端注册
+    @RequestMapping("/register")
+    public String register(){
+        return "register";
+    }
+
+    //跳转教学资源
+    @RequestMapping("/list_of_catalogues")
+    public String listOfCatalogues(HttpServletRequest request){
+        return "list_of_catalogues";
+    }
+
+    //跳转忘記密碼
+    @RequestMapping("/password_back")
+    public String passwordBack(HttpServletRequest request){
+        return "password_back";
+    }
+
+    //跳转学习进度
+    @RequestMapping("/collection_course")
+    public String collectionCourse(HttpServletRequest request){
+        return "collection_course";
+    }
+}

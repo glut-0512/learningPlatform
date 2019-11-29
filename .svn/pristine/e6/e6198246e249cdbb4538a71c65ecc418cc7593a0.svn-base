@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d59ae70f-fb6b-4a0e-b5e6-9fe5321a4e1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glut/learningplatform/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/glut/learningplatform/entity" beforeDir="true" afterPath="$PROJECT_DIR$/src/main/java/com/glut/learningplatform/entity" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/glut/learningplatform/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/glut/learningplatform/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stuplatform@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stuplatform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stuplatform@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="stuplatform: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Qcq2gcbZHvB4CQN7vMBUhBNTLl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\java\com\glut\learningplatform\controller" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\static\js" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\templates" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\java\com\glut\learningplatform\util" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\static\js" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\templates" />
+      <recent name="E:\chenbingzhuo\JavaProject\learningplatform\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.learningplatform [mybatis-generator:generate...]">
+    <configuration name="learningplatform [mybatis-generator:generate...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="LearningplatformApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="learningplatform" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.glut.learningplatform.LearningplatformApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.learningplatform [mybatis-generator:generate...]" />
+      <item itemvalue="Spring Boot.LearningplatformApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a167b4c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a167b4c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6e675b44" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="FORCE_UPDATE" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\chenbingzhuo\JavaProject\learningplatform" />
+          <option name="myCopyRoot" value="E:\chenbingzhuo\JavaProject\learningplatform" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\chenbingzhuo\JavaProject\learningplatform" />
+          <option name="myCopyRoot" value="E:\chenbingzhuo\JavaProject\learningplatform" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d59ae70f-fb6b-4a0e-b5e6-9fe5321a4e1d" name="Default Changelist" comment="" />
+      <created>1568080026532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568080026532</updated>
+      <workItem from="1568080027824" duration="9381000" />
+      <workItem from="1568099583476" duration="4655000" />
+      <workItem from="1568105440171" duration="1258000" />
+      <workItem from="1568161244784" duration="1154000" />
+      <workItem from="1568168891564" duration="1289000" />
+      <workItem from="1568251562672" duration="20497000" />
+      <workItem from="1568592970079" duration="2775000" />
+      <workItem from="1568598454469" duration="2478000" />
+      <workItem from="1568601366608" duration="4597000" />
+      <workItem from="1568617957773" duration="929000" />
+      <workItem from="1568618894594" duration="2782000" />
+      <workItem from="1568621867562" duration="2094000" />
+      <workItem from="1568778712201" duration="2895000" />
+      <workItem from="1568788656196" duration="631000" />
+      <workItem from="1568789323267" duration="1680000" />
+      <workItem from="1568791477409" duration="1866000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.修复自动生成的实体类属性不一致的问题">
+      <created>1568790334324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568790334324</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交USER类">
+      <created>1568790506480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568790506481</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1568791827067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568791827067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.修改数据库调用包" />
+    <MESSAGE value="1.修复自动生成的实体类属性不一致的问题" />
+    <MESSAGE value="提交USER类" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

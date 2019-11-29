@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>PPT</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/media.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="media">
+			<div class="search_b1">
+				<form>
+					<input type="text" placeholder="按关键词搜索">
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<ul class="list-unstyled">
+				<li>
+					<div class="media_img">
+						<img src="img/icon_ppt.png" />
+					</div>
+					<div class="media_text">
+						<h1>非门逻辑功能测试-PPT课件</h1>
+						<h2>面相对象：学生<span>资源简介：PPT课件</span></h2>
+						<h3>关键词：非门逻辑</h3>
+						<h4>文件格式：ppt</h4>
+						<h5>大小：345KB</h5>
+					</div>
+					<div class="download">
+						<a href="#" onclick="downloadFileByForm(this.name)" name="非门逻辑功能测试-PPT课件.ppt">
+							<div class="download_img">
+								<img src="img/download.png" />
+							</div>
+						</a>
+						<p>(已下载10次)</p>
+					</div>
+					<div class="clearfix"></div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/footer.js"></script>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fileUtil.js"></script>
+</html>

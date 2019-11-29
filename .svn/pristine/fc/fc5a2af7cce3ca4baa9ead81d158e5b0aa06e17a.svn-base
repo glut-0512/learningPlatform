@@ -1,0 +1,17 @@
+package com.glut.learningplatform.mapper;
+
+import com.glut.learningplatform.entity.FileManagers;
+
+public interface FileManagersMapper {
+    int deleteByPrimaryKey(String id);
+
+    int insert(FileManagers record);
+
+    int insertSelective(FileManagers record);
+
+    FileManagers selectByPrimaryKey(String id);
+
+    int updateByPrimaryKeySelective(FileManagers record);
+
+    int updateByPrimaryKey(FileManagers record);
+}

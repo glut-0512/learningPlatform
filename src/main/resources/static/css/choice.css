@@ -1,0 +1,134 @@
+.radio-btn input[type="radio"], .check-box input[type="checkbox"] {
+    visibility: hidden;
+}
+/*Custom checkbox*/
+ .check-box {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 7px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1px #4a80bd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    border: 1px solid #4a80bd;
+}
+.check-box i {
+    background: url(../img/check_mark.png) no-repeat center center;
+    position: absolute;
+    left: 3px;
+    bottom: -15px;
+    width: 13px;
+    height: 13px;
+    opacity: 0.8;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    -webkit-transform:rotateZ(-180deg);
+    -moz-transform:rotateZ(-180deg);
+    -o-transform:rotateZ(-180deg);
+    transform:rotateZ(-180deg);
+}
+.checkedBox {
+    -moz-box-shadow: inset 0 0 3px 1px #4a80bd;
+    -webkit-box-shadow: inset 0 0 3px 1px #4a80bd;
+    box-shadow: inset 0 0 3px 1px #4a80bd;
+    border-bottom-color: #4a80bd;
+}
+.checkedBox i {
+    bottom: 2px;
+    -webkit-transform:rotateZ(0deg);
+    -moz-transform:rotateZ(0deg);
+    -o-transform:rotateZ(0deg);
+    transform:rotateZ(0deg);
+}
+
+.radio {
+  padding-left: 20px;
+  }
+
+.radio label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px; }
+
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #4a80bd;
+  border-radius: 50%;
+  outline:none !important;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out; }
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 11px;
+  height: 11px;
+  left: 4px;
+  top: 4px;
+  margin-left: -20px;
+  border-radius: 50%;
+  outline:none !important;
+  background-color: #555555;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+.radio input[type="radio"] {
+  opacity: 0;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+    z-index: 1; }
+.radio input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+.radio input[type="radio"]:checked + label::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+      transform: scale(1, 1); }
+.radio input[type="radio"]:disabled + label {
+      opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before {
+        cursor: not-allowed; }
+.radio.radio-inline {
+    margin-top: 0; }
+
+
+.radio-danger input[type="radio"] + label::after {
+  background-color: #4a80bd; 
+  outline:none; }
+.radio-danger input[type="radio"]:checked + label::before {
+  border-color: #4a80bd; 
+  outline:none; }
+.radio-danger input[type="radio"]:checked + label::after {
+  background-color: #4a80bd; 
+  outline:none; }

@@ -1,0 +1,49 @@
+package com.glut.learningplatform.mapper.provider;
+
+import com.glut.learningplatform.entity.Manager;
+import com.glut.learningplatform.util.common.RasConstants;
+import org.apache.ibatis.jdbc.SQL;
+
+import java.util.Map;
+
+public class ManagerDynaSqlProvider {
+    public String countManager(Map<String, Object> params){
+        String sql = new SQL(){
+            {
+                SELECT("count(*)");
+                FROM(RasConstants.MANAGERTABLE);
+                Manager manager = (Manager) params.get("manager");
+                if(manager != null){
+                    if(manager.getUsername() != null && !manager.getUsername().equals("")){
+                        WHERE(" username like CONCAT('%',#{username},'%')");
+                    }
+                }
+            }
+        }.toString();
+        if (params.get("pageModel") != null) {
+            sql += " limit #{pageModel.firstLimitParam}, #{pageModel.pageSize}";
+        }
+        return sql;
+    }
+
+    public String selectByParam(Map<String, Object> params){
+        String sql = new SQL(){
+            {
+                SELECT("*");
+                FROM(RasConstants.MANAGERTABLE);
+                Manager manager = (Manager) params.get("manager");
+                ORDER_BY("id Desc");
+                if(manager != null){
+                    if(manager.getUsername() != null && !manager.getUsername().equals("")){
+                        WHERE(" username like CONCAT('%',#{username},'%')");
+                    }
+                }
+            }
+        }.toString();
+        if (params.get("pageModel") != null) {
+            sql += " limit #{pageModel.firstLimitParam}, #{pageModel.pageSize}";
+        }
+        return sql;
+    }
+
+}

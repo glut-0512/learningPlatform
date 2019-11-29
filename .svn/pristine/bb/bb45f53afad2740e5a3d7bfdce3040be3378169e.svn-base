@@ -1,0 +1,20 @@
+package com.glut.learningplatform.mapper.dynaSqlProvider;
+
+
+import com.glut.learningplatform.util.common.RasConstants;
+import org.apache.ibatis.jdbc.SQL;
+
+public class FileManagersDynaSqlProvider {
+
+    public String selectFilePathByName(String fileName){
+        System.out.println("SQL : " + fileName);
+        String sql = new SQL(){
+            {
+                SELECT("url");
+                FROM(RasConstants.FILEMANAGERS);
+                WHERE(" fileName = " + "\"" + fileName + "\"");
+            }
+        }.toString();
+        return sql;
+    }
+}

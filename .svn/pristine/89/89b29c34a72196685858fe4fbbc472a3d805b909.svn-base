@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.glut.learningplatform.mapper.CourseTypeMapper">
+  <resultMap id="BaseResultMap" type="com.glut.learningplatform.entity.CourseType">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="property" jdbcType="VARCHAR" property="property" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, type_name, parent_id, property, remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from course_type_table
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from course_type_table
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.glut.learningplatform.entity.CourseType">
+    insert into course_type_table (id, type_name, parent_id, 
+      property, remark)
+    values (#{id,jdbcType=VARCHAR}, #{typeName,jdbcType=VARCHAR}, #{parentId,jdbcType=VARCHAR}, 
+      #{property,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.glut.learningplatform.entity.CourseType">
+    insert into course_type_table
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="typeName != null">
+        type_name,
+      </if>
+      <if test="parentId != null">
+        parent_id,
+      </if>
+      <if test="property != null">
+        property,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="typeName != null">
+        #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null">
+        #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.glut.learningplatform.entity.CourseType">
+    update course_type_table
+    <set>
+      <if test="typeName != null">
+        type_name = #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        parent_id = #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null">
+        property = #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.glut.learningplatform.entity.CourseType">
+    update course_type_table
+    set type_name = #{typeName,jdbcType=VARCHAR},
+      parent_id = #{parentId,jdbcType=VARCHAR},
+      property = #{property,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <resultMap id="BaseResultMap" type="com.glut.learningplatform.entity.CourseType">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="property" jdbcType="VARCHAR" property="property" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, type_name, parent_id, property, remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from course_type_table
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from course_type_table
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.glut.learningplatform.entity.CourseType">
+    insert into course_type_table (id, type_name, parent_id, 
+      property, remark)
+    values (#{id,jdbcType=VARCHAR}, #{typeName,jdbcType=VARCHAR}, #{parentId,jdbcType=VARCHAR}, 
+      #{property,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.glut.learningplatform.entity.CourseType">
+    insert into course_type_table
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="typeName != null">
+        type_name,
+      </if>
+      <if test="parentId != null">
+        parent_id,
+      </if>
+      <if test="property != null">
+        property,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="typeName != null">
+        #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null">
+        #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.glut.learningplatform.entity.CourseType">
+    update course_type_table
+    <set>
+      <if test="typeName != null">
+        type_name = #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        parent_id = #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null">
+        property = #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.glut.learningplatform.entity.CourseType">
+    update course_type_table
+    set type_name = #{typeName,jdbcType=VARCHAR},
+      parent_id = #{parentId,jdbcType=VARCHAR},
+      property = #{property,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

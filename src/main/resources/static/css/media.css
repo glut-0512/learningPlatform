@@ -1,0 +1,121 @@
+.media{
+	width: 1200px;
+	min-height: 672px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	padding: 20px 20px 50px;
+}
+
+.search_b1
+{
+	float: right;
+	position: relative;
+	width: 270px;
+	margin: 10px 10px 10px 0px;
+}
+
+.search_b1 input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	padding-left: 10px;
+	border: 2px solid #beccdb;
+	border-radius: 5px;
+	outline: none;
+	background: #ffffff;
+	color: #9E9C9C;
+}
+.search_b1 button {
+	position: absolute; 
+	top: 4px;
+	right: 4px;
+	width: 24px;
+	height: 24px;
+	border: none;
+	outline: none;
+	background: url(../img/magnifier.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.media ul li{
+	padding: 20px 0px;
+	border-bottom: 2px solid #bfbfbf;
+}
+
+.media_img{
+	width: 130px;
+	height: 123px;
+	border: 1px solid #c3c3c3;
+	background: #FFFFFF;
+	line-height: 123px;
+	text-align: center;
+	float: left;
+}
+
+.media_img img{
+	width: 53px;
+	height: 56px;
+}
+
+.media_text{
+	float: left;
+	margin-left: 20px;
+}
+
+.media_text h1{
+	margin: 0px;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.media_text h2{
+	margin: 20px 0px 0px 0px;
+	font-size: 10px;
+	color: #000000;
+}
+
+.media_text h2 span{
+	margin-left: 80px;
+}
+
+.media_text h3{
+	margin: 13px 0px 0px 0px;
+	font-size: 10px;
+	color: #000000;
+}
+
+.media_text h4{
+	margin: 13px 0px 0px 0px;
+	font-size: 10px;
+	color: #000000;
+}
+
+.media_text h5{
+	margin: 13px 0px 0px 0px;
+	font-size: 10px;
+	color: #000000;
+}
+
+.download{
+	float: right;
+}
+
+.download_img{
+	width: 41px;
+	height: 41px;
+	margin-top: 80px;
+	float: left;
+}
+
+.download_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.download p{
+	float: left;
+	margin: 105px 0px 0px 10px;
+	font-size: 10px;
+	color: #000000;
+}

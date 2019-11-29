@@ -1,0 +1,104 @@
+$(function() {
+	
+	$("input").focus(function() {
+		$(this).parent().addClass("highlight");
+		$(".login_tips").removeClass("password_show");
+	});
+	
+	$("input").blur(function() {
+		$(this).parent().removeClass("highlight");
+	});
+	
+	$(".cuo_icon").click(function(){
+		$(this).prev().val("");
+		$(this).addClass("cuo_none");
+	});
+	
+	$('input').bind('input propertychange', function() {
+		if($(this).val()) {
+			$(this).next().removeClass("cuo_none");
+		} else {
+			$(this).next().addClass("cuo_none");
+		}
+	})
+	
+	$(".jianpan_icon").click(function(){
+		var softkeysName = $(this).parent().next().children(".softkeys");
+		var softkeysNull = softkeysName.html();
+		$(this).parent().next().toggleClass("cuo_none");
+		if(softkeysNull == ""){
+			$('.softkeys').softkeys({
+				target: softkeysName.data('target'),
+				layout: [
+					[
+						['`', '~'],
+						['1', '!'],
+						['2', '@'],
+						['3', '#'],
+						['4', '$'],
+						['5', '%'],
+						['6', '^'],
+						['7', '&amp;'],
+						['8', '*'],
+						['9', '('],
+						['0', ')'],
+						['-', '_'],
+						['=', '+'],
+						'←'
+					],
+					[
+						'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', ['[', '{'],
+						[']', '}']
+					],
+					[
+						'shift',
+						'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', [';', ':'],
+						["'", '&quot;'],
+						['\\', '|']
+					],
+					[
+						'z', 'x', 'c', 'v', 'b', 'n', 'm', [',', '&lt;'],
+						['.', '&gt;'],
+						['/', '?'],
+						['@']
+					]
+				]
+			});
+		} else {
+			$('.softkeys').html("");
+		}
+	});
+	
+	$(document).on("click", function(evt) {
+		if($(evt.target).closest(".password").length == 0) {
+			$('.virtual_keyboard').addClass("cuo_none");
+			$('.softkeys').html("");
+		}
+	});
+	
+	var expression = {
+		"#loginName" : /^[a-zA-Z0-9!@#$%^&*?+_-]{4,18}$/,
+		"#loginPwd_01" : /^[\w_-]{6,16}$/,
+		"#loginPwd_02" : /^[\w_-]{6,16}$/,
+		"#userName" : /^[\u4E00-\u9FA5A-Za-z0-9]{2,14}$/,
+		"#phoneName" : /^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/,
+		"#mailName" : /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/ 
+	}
+	
+	for(var key in expression){
+		var	a = key,
+			b = expression[key];
+		function myRegular(a , b) {
+			$(a).blur(function() {
+				var phoneStr = $(this).val();
+			  	var phoneRet = b;
+			  	if(phoneRet.test(phoneStr)) {
+					$(this).nextAll(".error_tips").addClass("cuo_none");
+				} else {
+					$(this).nextAll(".error_tips").removeClass("cuo_none");
+				}
+			});
+		}
+		myRegular(a , b);
+	}
+});

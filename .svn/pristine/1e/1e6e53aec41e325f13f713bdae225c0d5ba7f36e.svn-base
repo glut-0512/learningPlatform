@@ -1,0 +1,18 @@
+package com.glut.learningplatform.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.glut.learningplatform.entity.CourseType;
+
+public interface CourseTypeMapper extends BaseMapper<CourseType> {
+    int deleteByPrimaryKey(String id);
+
+    int insert(CourseType record);
+
+    int insertSelective(CourseType record);
+
+    CourseType selectByPrimaryKey(String id);
+
+    int updateByPrimaryKeySelective(CourseType record);
+
+    int updateByPrimaryKey(CourseType record);
+}

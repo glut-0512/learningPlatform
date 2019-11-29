@@ -1,0 +1,171 @@
+package com.glut.learningplatform.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+import java.util.Date;
+
+@TableName("user_table")
+public class User {
+    @TableId(type = IdType.UUID)
+    private String id;
+
+    private String loginName;
+
+    private String username;
+
+    private String password;
+
+    private String phoneNumber;
+
+    private String email;
+
+    private String cardId;
+
+    private String area;
+
+    private String userPic;
+
+    private String remark;
+
+    private Date loginTime;
+
+    private Date logoutTime;
+
+    private String subscribe;
+
+    private UserInfo userInfo;
+
+    private int userId;
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getEductionalSystme() {
+        return EductionalSystme;
+    }
+
+    public void setEductionalSystme(int eductionalSystme) {
+        EductionalSystme = eductionalSystme;
+    }
+
+    private int EductionalSystme;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
+    }
+
+    public String getLoginName() {
+        return loginName;
+    }
+
+    public void setLoginName(String loginName) {
+        this.loginName = loginName == null ? null : loginName.trim();
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber == null ? null : phoneNumber.trim();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
+    }
+
+    public String getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(String cardId) {
+        this.cardId = cardId == null ? null : cardId.trim();
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area == null ? null : area.trim();
+    }
+
+    public String getUserPic() {
+        return userPic;
+    }
+
+    public void setUserPic(String userPic) {
+        this.userPic = userPic == null ? null : userPic.trim();
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
+    }
+
+    public Date getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(Date loginTime) {
+        this.loginTime = loginTime;
+    }
+
+    public Date getLogoutTime() {
+        return logoutTime;
+    }
+
+    public void setLogoutTime(Date logoutTime) {
+        this.logoutTime = logoutTime;
+    }
+
+    public String getSubscribe() {
+        return subscribe;
+    }
+
+    public void setSubscribe(String subscribe) {
+        this.subscribe = subscribe == null ? null : subscribe.trim();
+    }
+}

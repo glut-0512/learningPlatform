@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>密码找回</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" />
+		<link type="text/css" href="icon/iconfont.css" rel="stylesheet"/>
+		<link type="text/css" href="css/softkeys-0.0.1.css" rel="stylesheet"/>
+		<link type="text/css" href="css/password_back.css" rel="stylesheet" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class='header_bg'>
+		    <div class='nav_wrap'>
+		    	<div class='logo'>
+					<a href="index.html">
+						<img src='img/logo.png' />
+					</a>
+		    	</div>
+		    	<div class='header_nav'>
+		    		<ul class='list-unstyled drop_down'>
+		    			<li class="nav_01">
+		    				<a href='index'>首页</a>
+		    			</li>
+		    			<li class="nav_01">
+		    				<a href='list_of_catalogues'>教学资源</a>
+		    			</li>
+		    			<li class="nav_01">
+		    				<a href='learning'>学习进度</a>
+		    			</li>
+		    			<li class="nav_01">
+		    				<a>教辅资源<i class='icon-angle-down'></i></a>
+		    				<ul class="list-unstyled">
+		    					<li>
+		    						<div class='nav_abg'></div>
+		    						<a href='javascript:;'>媒体类型<i class="icon-angle-right"></i></a>
+		    						<ul class="list-unstyled">
+		    							<li>
+		    								<div class='nav_abg'></div>
+		    								<a href='ppt'>PPT</a>
+		    							</li>
+		    							<li>
+		    								<div class='nav_abg'></div>
+		    								<a href='jpg'>图片</a>
+		    							</li>
+		    							<li>
+		    								<div class='nav_abg'></div>
+		    								<a href='swf'>动画</a>
+		    							</li>
+		    							<li>
+		    								<div class='nav_abg'></div>
+		    								<a href='pdf'>试卷</a>
+		    							</li>
+		    						</ul>
+		    					</li>
+		    					<li>
+		    						<div class='nav_abg'></div>
+		    						<a href='professional_type'>专业类型</a>
+		    					</li>
+		    				</ul>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    	<div class='clearfix'></div>
+		    </div>
+		</div>
+		<div class="password_contents">
+			<div class="password_box">
+				<h1>密码找回</h1>
+				<div class="demarcation_line"></div>
+				<div class="account">
+					<i class="iconfont icon-renwu-ren user_icon"></i>
+					<input id="loginName" type="text" placeholder="账号" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+				</div>
+				<div class="account e-mail">
+					<i class="glyphicon glyphicon-envelope e_icon"></i>
+					<input id="mailName" type="text" placeholder="邮箱" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+				</div>
+				<div class="verification">
+					<i class="iconfont icon-anquan verification_icon"></i>
+					<input id="passwordVerification" type="text" placeholder="验证码" />
+					<a href="javascript:;" class="cuo_icon cuo_none"><i class="iconfont icon-cuo"></i></a>
+				</div>
+				<div class="verification_button">
+					<a href="#" onclick="sendMsg()">获取验证码</a>
+				</div>
+				<div class="clearfix"></div>
+				<div class="password">
+					<i class="iconfont icon-denglushimima denglushimima_icon"></i>
+					<input id="loginPwd_01" type="password" name='password_key_01' placeholder="新密码" />
+					<a class="cuo_icon cuo_none" href="javascript:;"><i class="iconfont icon-cuo"></i></a>
+					<a href="javascript:;"><i class="iconfont icon-jianpan jianpan_icon"></i></a>
+					<div class="virtual_keyboard cuo_none">
+						<div class="softkeys" data-target="input[name='password_key_01']"></div>
+					</div>
+				</div>
+				<div class="password">
+					<i class="iconfont icon-denglushimima denglushimima_icon"></i>
+					<input id="loginPwd_02" type="password" name='password_key_02' placeholder="确认密码" />
+					<a class="cuo_icon cuo_none" href="javascript:;"><i class="iconfont icon-cuo"></i></a>
+					<a href="javascript:;"><i class="iconfont icon-jianpan jianpan_icon"></i></a>
+					<div class="virtual_keyboard cuo_none">
+						<div class="softkeys" data-target="input[name='password_key_02']"></div>
+					</div>
+				</div>
+				<div class="password_button">
+					<a href="#" onclick="submit()">确认提交</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/softkeys-0.0.1.js" ></script>
+	<script type="text/javascript" src="js/password_back.js"></script>
+</html>

@@ -1,0 +1,38 @@
+package com.glut.learningplatform.service.impl;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.glut.learningplatform.entity.User;
+import com.glut.learningplatform.mapper.UserMapper;
+import com.glut.learningplatform.service.UserService;
+import com.glut.learningplatform.util.tag.PageModel;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@Service("userSevice")
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+    @Autowired
+    private UserMapper userMapper;
+
+    @Override
+    public PageModel<User> findUser(User user, PageModel<User> pageModel) {
+        Map<String,Object> params = new HashMap<>();
+        params.put("user", user);
+        Integer recordCount = userMapper.countUser(params);
+        //System.out.println(recordCount);
+        if(recordCount > 0){
+            pageModel.setRecordCount(recordCount);
+            params.put("pageModel", pageModel);
+        }
+
+        List<User> list = userMapper.selectByParam(params);
+        //System.out.println(list);
+        pageModel.setList(list);
+        return pageModel;
+    }
+
+}

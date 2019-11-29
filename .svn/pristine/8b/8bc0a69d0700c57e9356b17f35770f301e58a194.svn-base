@@ -1,0 +1,20 @@
+package com.glut.learningplatform.service.impl;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.glut.learningplatform.entity.FileManagers;
+import com.glut.learningplatform.mapper.FileManagersMapper;
+import com.glut.learningplatform.service.FileManagerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("FileManagerService")
+public class FileManagerServiceImpl extends ServiceImpl<FileManagersMapper, FileManagers> implements FileManagerService {
+
+    @Autowired
+    private FileManagersMapper fileManagersMapper;
+
+    @Override
+    public String selectFilePathByFileName(String fileName) {
+        return fileManagersMapper.selectFilePathByName(fileName);
+    }
+}

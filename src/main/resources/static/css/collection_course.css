@@ -1,0 +1,95 @@
+.collection_content{
+	float: right;
+	width: 980px;
+	padding: 10px;
+	min-height: 622px;
+}
+
+.collection_content ul li{
+	background: #ededed;
+	overflow: hidden;
+}
+
+.collection_content ul li:hover{
+	background: #FFFFFF;
+}
+
+.collection_content ul li a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.collection_content .left_img{
+	float: left;
+	width: 270px;
+	height: 136px;
+}
+
+.collection_content .collection_title{
+	float: left;
+	padding-left: 20px;
+}
+
+.collection_title h1{
+	margin: 20px 0px 0px 0px;
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.collection_title h1 span{
+	margin: 0px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.collection_title p{
+	margin: 24px 0px 0px 0px;
+	font-size: 12px;
+	color: #000000;
+	line-height: 20px;
+}
+
+.collection_title p span{
+	margin: 0px;
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	margin-left: 5px;
+	color: #FFFFFF;
+	background: #4a80bd;
+	text-align: center;	
+}
+
+.collection_title p span:last-child{
+	margin-right: 5px;
+}
+
+.collection_title h2{
+	margin: 20px 0px 0px 0px;
+	font-size: 12px;
+	color: #000000;
+	line-height: 20px;
+}
+
+.collection_content .collection_right{
+	float: right;
+	width: 170px;
+	height: 136px;
+	text-align: center;
+	border-left: 1px solid #FFFFFF;
+}
+
+.collection_right img{
+	width: 70px;
+	height: 65px;
+	margin-top: 15px;
+}
+
+.collection_content .collection_right p{
+	margin: 5px 0px 0px 0px;
+}

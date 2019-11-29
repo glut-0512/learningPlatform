@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>课程列表</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="css/page.css" rel="stylesheet">
+    <link type="text/css" href="css/choice.css" rel="stylesheet" />
+    <link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+    <link type="text/css" href="css/list_of_catalogues.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/header.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="body_bg"></div>
+<div class="details_content">
+    <div class="details_left">
+        <div class="dl_content">
+            <div class="dl_content_top">
+                <i class="icon-sitemap"></i>
+                <h1>课程分类</h1>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="radio radio-danger checkbox_course">
+                        <input type="radio" name="radio" value="option">
+                        <label></label>
+                    </div>
+                    <p>全部课程</p>
+                    <span>300</span>
+                </li>
+                <li>
+                    <div class="radio radio-danger checkbox_course">
+                        <input type="radio" name="radio" value="option">
+                        <label></label>
+                    </div>
+                    <p>开放课程</p>
+                    <span>180</span>
+                </li>
+            </ul>
+        </div>
+        <div class="dl_content" id="lan">
+            <div class="dl_content_top">
+                <i class="icon-group"></i>
+                <h1>授课语言</h1>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="checkbox_course">
+                        <input type="checkbox" name="check-box" />
+                    </div>
+                    <p>中文</p>
+                    <span>545</span>
+                </li>
+                <li>
+                    <div class="checkbox_course">
+                        <input type="checkbox" name="check-box" />
+                    </div>
+                    <p>英文</p>
+                    <span>245</span>
+                </li>
+            </ul>
+        </div>
+     <!-- <c:forEach items="${fList}" var="fList" varStatus="status">
+            <div class="dl_content dlc_none">
+                <div class="dl_content_top">
+                    <i class="icon-lightbulb"></i>
+                    <h1>${fList.typeName}</h1>
+                    <h5 class="icon-caret-down dlc_down"></h5>
+                    <div class="clearfix"></div>
+                </div>
+                <ul class="list-unstyled">
+                    <c:forEach items="${lists}" var="lists" varStatus="status">
+                        <c:if test="${lists.parentId==fList.id}">
+                            <li>
+                                <div class="checkbox_course">
+                                    <input type="checkbox" value="${lists.id}"  name="secondType" />
+                                </div>
+                                <p>${lists.typeName}</p>
+                                <span>245</span>
+                            </li>
+                        </c:if>
+                    </c:forEach>
+                </ul>
+            </div>
+        </c:forEach>-->
+    </div>
+    <div class="list_of_catalogues">
+        <div class="search_b1">
+            <form>
+                <input type="text" placeholder="知识点或字幕关键字搜索视频或文件">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="list_content">
+            <ul class="list-unstyled">
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum.html">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher.html">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum.html">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher.html">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum.html">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher.html">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum.html">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher.html">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum.html">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher.html">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="list_content_left">
+                        <a href="curriculum.html">
+                            <img src="img/catalogue_img_01.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_content_center">
+                        <div class="center_title">
+                            <a href="curriculum">数据结构（C语言版）<span>2019秋</span></a>
+                        </div>
+                        <div class="center_time">
+                            <span>共</span>
+                            <span class="time_bg">7</span>
+                            <span class="time_bg">3</span>
+                            <span>课时，</span>
+                            <span>学习时间</span>
+                            <span class="time_bg">9</span>
+                            <span>周。</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="center_bottom">
+                            <p><i class="icon-calendar"></i>2018/03/19开课</p>
+                        </div>
+                    </div>
+                    <div class="list_content_right">
+                        <a href="teacher">
+                            <div class="right_img">
+                                <img src="img/course_teacher_01.png" />
+                            </div>
+                            <p>玛丽</p>
+                            <p title="教务主任">教务主任</p>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="news_page">
+            <ul class="page" maxshowpageitem="5" pagelistcount="7" id="page"></ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+<script type="text/javascript" src="js/footer.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/page.js"></script>
+<script src="js/list_of_catalogues.js"></script>
+</html>

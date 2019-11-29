@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.glut.learningplatform.mapper.PersonalSettingsMapper">
+  <resultMap id="BaseResultMap" type="com.glut.learningplatform.entity.PersonalSettings">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="privacy" jdbcType="VARCHAR" property="privacy" />
+    <result column="at_school" jdbcType="VARCHAR" property="atSchool" />
+    <result column="education" jdbcType="VARCHAR" property="education" />
+    <result column="universities_colleges" jdbcType="VARCHAR" property="universitiesColleges" />
+    <result column="major" jdbcType="VARCHAR" property="major" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="personal_profile" jdbcType="VARCHAR" property="personalProfile" />
+    <result column="entrance" jdbcType="DATE" property="entrance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, privacy, at_school, education, universities_colleges, major, grade, 
+    address, sex, birthday, personal_profile, entrance
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from personal_settings
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from personal_settings
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    insert into personal_settings (id, user_id, privacy, 
+      at_school, education, universities_colleges, 
+      major, grade, address, 
+      sex, birthday, personal_profile, 
+      entrance)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{privacy,jdbcType=VARCHAR}, 
+      #{atSchool,jdbcType=VARCHAR}, #{education,jdbcType=VARCHAR}, #{universitiesColleges,jdbcType=VARCHAR}, 
+      #{major,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, #{personalProfile,jdbcType=VARCHAR}, 
+      #{entrance,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    insert into personal_settings
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="privacy != null">
+        privacy,
+      </if>
+      <if test="atSchool != null">
+        at_school,
+      </if>
+      <if test="education != null">
+        education,
+      </if>
+      <if test="universitiesColleges != null">
+        universities_colleges,
+      </if>
+      <if test="major != null">
+        major,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="personalProfile != null">
+        personal_profile,
+      </if>
+      <if test="entrance != null">
+        entrance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="privacy != null">
+        #{privacy,jdbcType=VARCHAR},
+      </if>
+      <if test="atSchool != null">
+        #{atSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null">
+        #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="universitiesColleges != null">
+        #{universitiesColleges,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        #{major,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="personalProfile != null">
+        #{personalProfile,jdbcType=VARCHAR},
+      </if>
+      <if test="entrance != null">
+        #{entrance,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    update personal_settings
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="privacy != null">
+        privacy = #{privacy,jdbcType=VARCHAR},
+      </if>
+      <if test="atSchool != null">
+        at_school = #{atSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null">
+        education = #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="universitiesColleges != null">
+        universities_colleges = #{universitiesColleges,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        major = #{major,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="personalProfile != null">
+        personal_profile = #{personalProfile,jdbcType=VARCHAR},
+      </if>
+      <if test="entrance != null">
+        entrance = #{entrance,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    update personal_settings
+    set user_id = #{userId,jdbcType=INTEGER},
+      privacy = #{privacy,jdbcType=VARCHAR},
+      at_school = #{atSchool,jdbcType=VARCHAR},
+      education = #{education,jdbcType=VARCHAR},
+      universities_colleges = #{universitiesColleges,jdbcType=VARCHAR},
+      major = #{major,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      personal_profile = #{personalProfile,jdbcType=VARCHAR},
+      entrance = #{entrance,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.glut.learningplatform.entity.PersonalSettings">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="privacy" jdbcType="VARCHAR" property="privacy" />
+    <result column="at_school" jdbcType="VARCHAR" property="atSchool" />
+    <result column="education" jdbcType="VARCHAR" property="education" />
+    <result column="universities_colleges" jdbcType="VARCHAR" property="universitiesColleges" />
+    <result column="major" jdbcType="VARCHAR" property="major" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="personal_profile" jdbcType="VARCHAR" property="personalProfile" />
+    <result column="entrance" jdbcType="DATE" property="entrance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, privacy, at_school, education, universities_colleges, major, grade, 
+    address, sex, birthday, personal_profile, entrance
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from personal_settings
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from personal_settings
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    insert into personal_settings (id, user_id, privacy, 
+      at_school, education, universities_colleges, 
+      major, grade, address, 
+      sex, birthday, personal_profile, 
+      entrance)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{privacy,jdbcType=VARCHAR}, 
+      #{atSchool,jdbcType=VARCHAR}, #{education,jdbcType=VARCHAR}, #{universitiesColleges,jdbcType=VARCHAR}, 
+      #{major,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, #{personalProfile,jdbcType=VARCHAR}, 
+      #{entrance,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    insert into personal_settings
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="privacy != null">
+        privacy,
+      </if>
+      <if test="atSchool != null">
+        at_school,
+      </if>
+      <if test="education != null">
+        education,
+      </if>
+      <if test="universitiesColleges != null">
+        universities_colleges,
+      </if>
+      <if test="major != null">
+        major,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="personalProfile != null">
+        personal_profile,
+      </if>
+      <if test="entrance != null">
+        entrance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="privacy != null">
+        #{privacy,jdbcType=VARCHAR},
+      </if>
+      <if test="atSchool != null">
+        #{atSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null">
+        #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="universitiesColleges != null">
+        #{universitiesColleges,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        #{major,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="personalProfile != null">
+        #{personalProfile,jdbcType=VARCHAR},
+      </if>
+      <if test="entrance != null">
+        #{entrance,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    update personal_settings
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="privacy != null">
+        privacy = #{privacy,jdbcType=VARCHAR},
+      </if>
+      <if test="atSchool != null">
+        at_school = #{atSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null">
+        education = #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="universitiesColleges != null">
+        universities_colleges = #{universitiesColleges,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        major = #{major,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="personalProfile != null">
+        personal_profile = #{personalProfile,jdbcType=VARCHAR},
+      </if>
+      <if test="entrance != null">
+        entrance = #{entrance,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.glut.learningplatform.entity.PersonalSettings">
+    update personal_settings
+    set user_id = #{userId,jdbcType=INTEGER},
+      privacy = #{privacy,jdbcType=VARCHAR},
+      at_school = #{atSchool,jdbcType=VARCHAR},
+      education = #{education,jdbcType=VARCHAR},
+      universities_colleges = #{universitiesColleges,jdbcType=VARCHAR},
+      major = #{major,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      personal_profile = #{personalProfile,jdbcType=VARCHAR},
+      entrance = #{entrance,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

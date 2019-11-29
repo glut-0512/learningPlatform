@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>收藏课程</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/user_nav.css" rel="stylesheet" />
+		<link type="text/css" href="css/my_set_up.css" rel="stylesheet" />
+		<link type="text/css" href="css/collection_course.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/headerUser.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="details_content">
+	    	<div class="opc_left">
+	    		<div class="opcl_top">
+	    			<div class="opcl_img">
+	    				<img src="img/course_teacher_01.png" />
+	    			</div>
+	    			<div class="opcl_id">
+	    				<h2 id="loginName"></h2>
+	    				<p>学生</p>
+	    			</div>
+	    		</div>
+	    		<div class="opcl_bottom op_red">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_book"></i>
+	    		    			<a href="learning">我的课程</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    				<li>
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a href="learning">学习的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<li class="op_border">
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a id="showCollection" href="javascript:;">收藏的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<div class="collection show_block">
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>人力职员管理</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>电子商务</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>室内设计</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    				</div>
+	    			</ul>
+	    		</div>
+	    		<div class="opcl_bottom">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_set"></i>
+	    		    			<a href="my_set_up">个人设置</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+		    <div class="collection_content">
+				<ul class="list-unstyled">
+					<li>
+						<a href="curriculum">
+							<img class="left_img" src="img/catalogue_img_01.jpg" />
+							<div class="collection_title">
+								<h1>企业人力资源管理师专业技能<span>2019秋</span></h1>
+								<p>已学习<span>2</span><span>3</span>课时</p>
+								<h2><i class="icon-time"></i>上次结束时间：2019-09-08</h2>
+							</div>
+							<div class="collection_right">
+								<img src="img/course_teacher_01.png" />
+								<p>玛丽</p>
+								<p>教务主任</p>
+							</div>
+							<div class="clearfix"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		    <div class="clearfix"></div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/collection_course.js"></script>
+</html>

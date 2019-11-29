@@ -1,0 +1,8 @@
+package com.glut.learningplatform.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.glut.learningplatform.entity.UserInfo;
+
+public interface UserInfoService extends IService<UserInfo> {
+
+}

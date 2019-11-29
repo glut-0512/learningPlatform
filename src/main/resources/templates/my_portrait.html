@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>上传头像</title>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/user_nav.css" rel="stylesheet" />
+		<link type="text/css" href="css/my_set_up.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/headerUser.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="details_content">
+	    	<div class="opc_left">
+	    		<div class="opcl_top">
+	    			<div class="opcl_img">
+	    				<img src="img/course_teacher_01.png" />
+	    			</div>
+	    			<div class="opcl_id">
+	    				<h2>CHEN</h2>
+	    				<p>学生</p>
+	    			</div>
+	    		</div>
+	    		<div class="opcl_bottom">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_book"></i>
+	    		    			<a href="learning">我的课程</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    				<li>
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a href="learning">学习的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a id="showCollection" href="javascipt:;">收藏的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<div class="collection">
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>人力职员管理</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>电子商务</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>室内设计</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    				</div>
+	    			</ul>
+	    		</div>
+	    		<div class="opcl_bottom op_red">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_set"></i>
+	    		    			<a href="my_set_up">个人设置</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+		    <div class="set_up">
+		    	<div class="set_up_title">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<a href="my_set_up">基础信息</a>
+		    			</li>
+		    			<li>
+		    				<a class="lpt_bg" href="my_portrait">头像设置</a>
+		    			</li>
+		    			<li>
+		    				<a href="new_password">密码设置</a>
+		    			</li>
+		    			<div class="clearfix"></div>
+		    		</ul>
+		    	</div>
+		    	<div class="set_up_content">
+		    		<div class="htmleaf-container">
+						<div class="por_container">
+							<div class="imageBox">
+								<div class="thumbBox"></div>
+								<div class="spinner" style="display: none">Loading...</div>
+							</div>
+							<div class="action">
+								<div class="new-contentarea tc">
+									<a href="javascript:void(0)" class="upload-img">
+										<label for="upload-file">上传图像</label>
+									</a>
+									<input type="file" class="" name="upload-file" id="upload-file" />
+								</div>
+								<input type="button" id="btnCrop" class="Btnsty_peyton" value="保存">
+								<input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+">
+								<input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-">
+							</div>
+							<div class="cropped"></div>
+						</div>
+					</div>
+		    	</div>
+		    </div>
+		    <div class="clearfix"></div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/cropbox.js"></script>
+	<script src="js/my_set_up.js"></script>
+	<script type="text/javascript">
+	$(window).load(function() {
+		var options =
+		{
+			thumbBox: '.thumbBox',
+			spinner: '.spinner',
+			imgSrc: 'img/course_teacher_01.png'
+		}
+		var cropper = $('.imageBox').cropbox(options);
+		$('#upload-file').on('change', function(){
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				options.imgSrc = e.target.result;
+				cropper = $('.imageBox').cropbox(options);
+			}
+			reader.readAsDataURL(this.files[0]);
+			this.files = [];
+		})
+		$('#btnCrop').on('click', function(){
+			var img = cropper.getDataURL();
+			$('.cropped').html('');
+			$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:64px;margin-top:4px;border-radius:64px;box-shadow:0px 0px 12px #7E7E7E;" ><p>64px*64px</p>');
+			$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:128px;margin-top:4px;border-radius:128px;box-shadow:0px 0px 12px #7E7E7E;"><p>128px*128px</p>');
+			$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:180px;margin-top:4px;border-radius:180px;box-shadow:0px 0px 12px #7E7E7E;"><p>180px*180px</p>');
+		})
+		$('#btnZoomIn').on('click', function(){
+			cropper.zoomIn();
+		})
+		$('#btnZoomOut').on('click', function(){
+			cropper.zoomOut();
+		})
+	});
+	</script>
+</html>

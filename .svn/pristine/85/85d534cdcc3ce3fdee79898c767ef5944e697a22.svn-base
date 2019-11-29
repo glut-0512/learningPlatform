@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>修改密码</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/user_nav.css" rel="stylesheet" />
+		<link type="text/css" href="css/my_set_up.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/headerUser.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="details_content">
+	    	<div class="opc_left">
+	    		<div class="opcl_top">
+	    			<div class="opcl_img">
+	    				<img src="img/course_teacher_01.png" />
+	    			</div>
+	    			<div class="opcl_id">
+	    				<h2>CHEN</h2>
+	    				<p>学生</p>
+	    			</div>
+	    		</div>
+	    		<div class="opcl_bottom">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_book"></i>
+	    		    			<a href="learning.html">我的课程</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    				<li>
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a href="learning.html">学习的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<div class="opcl_text">
+	    	    				<span><i></i></span>
+	    	    				<a id="showCollection" href="javascript:;">收藏的课程</a>
+	    	    				<div class="clearfix"></div>
+	    					</div>
+	    				</li>
+	    				<div class="collection">
+	    					<a href="collection_course.html">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>人力职员管理</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course.html">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>电子商务</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    					<a href="collection_course.html">
+	    						<div class="collection_box">
+	    							<i><img src="img/stars_img_01.png" /></i>
+	    							<p>室内设计</p>
+	    							<div class="clearfix"></div>
+	    						</div>
+	    					</a>
+	    				</div>
+	    			</ul>
+	    		</div>
+	    		<div class="opcl_bottom op_red">
+	    			<ul class="list-unstyled">
+	    				<li>
+	    					<div class="opcl_title">
+	    		    			<i class="opc_set"></i>
+	    		    			<a href="my_set_up.html">个人设置</a>
+	    		    			<div class="clearfix"></div>
+	    		    		</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+		    <div class="set_up">
+		    	<div class="set_up_title">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<a href="my_set_up">基础信息</a>
+		    			</li>
+		    			<li>
+		    				<a href="my_portrait">头像设置</a>
+		    			</li>
+		    			<li>
+		    				<a class="lpt_bg" href="new_password">密码设置</a>
+		    			</li>
+		    			<div class="clearfix"></div>
+		    		</ul>
+		    	</div>
+		    	<div class="set_up_content">
+		    		<ul class="list-unstyled">
+			    		<li>
+			    			<label>密码：</label>
+			    			<input type="password" class="input_text" id="oldPassword" value="" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>新密码：</label>
+			    			<input type="password" class="input_text" id="newPassword_1" value="" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<label>确认密码：</label>
+			    			<input type="password" class="input_text" id="newPassword_2" value="" maxlength="50" />
+			    			<div class="clearfix"></div>
+			    		</li>
+			    		<li>
+			    			<div class="pass_icon" onclick="subPassword()">
+				    			<a>修改密码</a>
+				    		</div>
+			    		</li>
+			    	</ul>
+		    	</div>
+		    </div>
+		    <div class="clearfix"></div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/my_set_up.js"></script>
+</html>

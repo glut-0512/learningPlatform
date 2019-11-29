@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>数据科学引论</title>
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="css/header_footer.css" rel="stylesheet" />
+		<link type="text/css" href="css/curriculum.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/headerUser.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="hierarchy">
+		    <div class="curriculum_title">
+		    	<div class="title_img">
+		    		<img src="img/curriculum_img_01.jpg" />
+		    	</div>
+		    	<div class="title_text">
+		    		<div class="text_top">
+		    			<h1>数据结构（C语言版）</h1>
+		    		</div>
+		    		<div class="text_center">
+		    			<ul class="list-unstyled">
+		    				<li class="text_center_top"><i class="icon-time"></i>&nbsp;&nbsp;&nbsp;&nbsp;学习时间：2018-03-26 — 2018-06-17</li>
+		    				<li class="text_center_bottom"><i class="glyphicon glyphicon-blackboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;考试安排：2018-03-26 — 2018-06-17</li>
+		    			</ul>
+		    		</div>
+		    		<div class="text_bottom">
+		    			<a class="join" href="video">进入学习</a>
+		    			<span>
+		    				<i class="icon-heart-empty"></i>
+		    				<p>64人已学习</p>
+		    				<div class="clearfix"></div>
+		    			</span>
+						<span>
+							<img src="img/stars_img_02.png" />
+							<p>4人已收藏</p>
+							<div class="clearfix"></div>
+						</span>
+		    			<div class="clearfix"></div>
+		    		</div>
+		    	</div>
+		    	<div class="clearfix"></div>
+		    </div>
+		    <div class="content">
+		    	<div class="content_left">
+		    		<ul class="list-unstyled">
+		    			<li>
+		    				<h1><i class="glyphicon glyphicon-blackboard"></i>课程介绍</h1>
+		    				<p>数据结构（C语言版）</p>
+		    			</li>
+		    			<li>
+		    				<h1><i class="icon-book"></i>课程大纲</h1>
+		    				<p>数据结构（C语言版）</p>
+		    			</li>
+		    			<li>
+		    				<h1><i class="icon-paste"></i>考核标准</h1>
+		    				<p>数据结构（C语言版）</p>
+		    			</li>
+		    			<li>
+		    				<h1><i class="glyphicon glyphicon-book"></i>教材教参</h1>
+		    				<p>数据结构（C语言版）</p>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    	<div class="content_right">
+		    		<div class="right_text">
+	    				<h1>课程信息</h1>
+	    				<ul class="list-unstyled">
+	    					<li>
+	    						<p><i class="glyphicon glyphicon-time"></i>12周</p>
+	    						<p><i class="icon-check"></i>4小时/周</p>
+	    						<p><i class="icon-globe"></i>中</p>
+	    						<p><i class="icon-film"></i>中文/英文&nbsp;&nbsp;字幕</p>
+	    					</li>
+	    				</ul>
+		    		</div>
+		    		<div class="right_text">
+	    				<h1>课程类型</h1>
+	    				<ul class="list-unstyled">
+	    					<li>
+	    						<p>工学</p>
+	    					</li>
+	    				</ul>
+		    		</div>
+		    		<div class="right_text">
+	    				<h1>教师</h1>
+	    				<div class="right_text_teacher">
+	    					<div class="teacher_img">
+	    						<img src="img/course_teacher_01.png" />
+	    					</div>
+	    					<div class="teacher_text">
+	    						<a href="teacher">玛丽</a>
+	    						<p>教务主任</p>
+	    						<p>数据结构精英班落地分享</p>
+	    					</div>
+	    				</div>
+		    		</div>
+		    	</div>
+		    	<div class="clearfix"></div>
+		    </div>
+		</div>
+		<div class="footer"></div>
+	</body>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>

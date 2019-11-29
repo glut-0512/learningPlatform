@@ -1,0 +1,281 @@
+
+.opc_left{
+	width: 210px;
+	float: left;
+}
+
+.opcl_img{
+	width: 110px;
+	height: 110px;
+	margin: 10px auto 15px;
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	border:2px solid #b6b6b6;
+}
+
+.opcl_img img{
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%;
+	width: 95%;
+	height: 95%;
+}
+
+.opcl_id{
+	text-align: center;
+}
+
+.opcl_id h2{
+	margin: 0px auto;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.opcl_id h3{
+	margin: 10px auto 0px;
+	font-size: 14px;
+	color: #000000;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #f0f6fa;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.opcl_id p{
+	margin: 10px auto 0px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #bacfe3;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.opcl_top{
+	margin-bottom: 20px;
+}
+
+.opcl_title{
+	width: 200px;
+	height: 60px;
+	background-color: #f0f6fa;
+}
+
+.opcl_title:hover{
+	background-color: #4a80bd;
+}
+
+.opcl_title:hover a{
+	color: #FFFFFF;
+}
+
+.opcl_title:hover .opc_book{
+	background: url(../img/opc_book_w.png) no-repeat center center;
+}
+
+.opcl_title:hover .opc_cart{
+	background: url(../img/opc_cart_w.png) no-repeat center center;
+}
+
+.opcl_title:hover .opc_news{
+	background: url(../img/opc_news_w.png) no-repeat center center;
+}
+
+.opcl_title:hover .opc_set{
+	background: url(../img/opc_set_w.png) no-repeat center center;
+}
+
+.opcl_title:hover .opc_study{
+	background: url(../img/opc_study_w.png) no-repeat center center;
+}
+
+.opcl_title:hover .opc_chat{
+	background: url(../img/opc_chat_w.png) no-repeat center center;
+}
+
+.opcl_title i{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin: 16px 25px 0px 25px;
+}
+
+.opcl_title .opc_book{
+	background: url(../img/opc_book.png) no-repeat center center;
+}
+
+.opcl_title .opc_cart{
+	background: url(../img/opc_cart.png) no-repeat center center;
+}
+
+.opcl_title .opc_news{
+	background: url(../img/opc_news.png) no-repeat center center;
+}
+
+.opcl_title .opc_set{
+	background: url(../img/opc_set.png) no-repeat center center;
+}
+
+.opcl_title .opc_study{
+	background: url(../img/opc_study.png) no-repeat center center;
+}
+
+.opcl_title .opc_chat{
+	background: url(../img/opc_chat.png) no-repeat center center;
+}
+
+.op_red .opc_book{
+	background: url(../img/opc_book_w.png) no-repeat center center;
+}
+
+.op_red .opc_cart{
+	background: url(../img/opc_cart_w.png) no-repeat center center;
+}
+
+.op_red .opc_news{
+	background: url(../img/opc_news_w.png) no-repeat center center;
+}
+
+.op_red .opc_set{
+	background: url(../img/opc_set_w.png) no-repeat center center;
+}
+
+.op_red .opc_study{
+	background: url(../img/opc_study_w.png) no-repeat center center;
+}
+
+.op_red .opc_chat{
+	background: url(../img/opc_chat_w.png) no-repeat center center;
+}
+
+
+.opcl_title a{
+	text-decoration: none;
+	color: #000000;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.op_red a{
+	color: #FFFFFF;
+}
+
+.opcl_bottom ul li{
+	width: 210px;
+	height: 61px;
+	border-left:10px solid #FFFFFF;
+	background-color: #bacfe3;
+}
+
+.opcl_bottom ul li:last-child{
+	height: 60px;
+}
+
+.opcl_bottom ul li:last-child .opcl_text{
+	border-bottom: 0px solid #124074;
+}
+
+.opcl_bottom ul li .opcl_text{
+	border-bottom: 1px solid #124074;
+}
+
+.opcl_text span{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin: 16px 25px 0px 25px;
+}
+
+.opcl_text span i{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%;
+	margin: 9px 9px;
+	background: #4a80bd;
+}
+
+.opcl_text a{
+	text-decoration: none;
+	color: #000000;
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.opcl_text a:hover{
+	color: #4a80bd;
+}
+
+.op_red .opcl_title{
+	background-color: #4a80bd;
+}
+
+.opcl_bottom ul .op_border{
+	border-left:10px solid #124074;
+}
+
+.collection{
+	border-left:10px solid #ffffff;
+	background: #f0f6fa;
+	padding: 10px 0px;
+	display: none;
+}
+
+.collection_box{
+	padding: 10px 0px;	
+}
+
+.collection_box i{
+	width: 15px;
+	height: 14px;
+	margin: 0px 15px 0px 30px;
+	display: block;
+	float: left;
+}
+
+.collection_box i img{
+	width: 100%;
+	height: 100%;
+}
+
+.collection_box p{
+	font-size: 12px;
+	line-height: 26px;
+	color: #000000;
+	margin: 0px;
+	float: left;
+}
+
+.collection a:hover p{
+	color: #4a80bd;
+}
+
+.show_block{
+	display: block;
+}

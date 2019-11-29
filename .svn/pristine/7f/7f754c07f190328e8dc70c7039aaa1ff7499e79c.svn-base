@@ -1,0 +1,11 @@
+$(function() {
+	$(".dropdown_wrap dd").click(function(){
+		var lic = $(this).text();
+		$(this).addClass("bg_red").siblings().removeClass("bg_red");
+		$(this).parent().parent().prev().children("span").text(lic);
+	});
+	
+	$("#showCollection").click(function(){
+		$(".collection").toggleClass("show_block");
+	});
+});

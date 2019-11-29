@@ -1,0 +1,209 @@
+body
+{
+	background: url(../img/register_bg.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+
+*{
+	padding:0px; 
+	margin:0px;
+}
+
+ul,p{
+	margin: 0px;
+}
+
+input{  
+	background:none;  
+	outline:none;  
+	border:0px;
+}
+
+input::-webkit-input-placeholder {
+	color: #bbbbbb;
+}
+
+input:-moz-placeholder {
+	color: #bbbbbb;
+}
+
+input::-moz-placeholder {
+	color: #bbbbbb;
+}
+
+input:-ms-input-placeholder {
+	color: #bbbbbb;
+}
+
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.register{
+	float: right;
+	width: 360px;
+	background-color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 85px;
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.register h1{
+	font-size: 26px;
+	color: #4a80bd;
+	text-align: center;
+	margin: 20px 0px 10px 0px;
+}
+
+.demarcation_line{
+	width: 100%;
+	height: 2px;
+	background-color: #eaeaea;
+	margin: 15px 0px;
+}
+
+.account,.password,.verification{
+	margin: 20px auto 0px;
+	width: 294px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #000000;
+	font-size: 16px;
+	line-height: 49px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.account input{
+	width: 188px;
+	height: 51px;
+	float: left;
+}
+
+.account .user_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.account .e_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 12px 8px 0px;
+	float: left;
+}
+
+.error_tips{
+	position: absolute;
+	top: -35px;
+	left: 0px;
+	margin: 0px;
+	color: #ff0000;
+}
+
+.error_tips p{
+	font-size: 16px;
+	line-height: 49px;
+}
+
+.cuo_icon i{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px;
+	float: right;
+}
+
+.cuo_none{
+	display: none;
+}
+
+.password input{
+	width: 188px;
+	height: 51px;
+	float: left;
+}
+
+.password .denglushimima_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.password .cuo_icon i{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px 0px 0px;
+	float: right;
+}
+
+.password .jianpan_icon{
+	color: #bbbbbb;
+	font-size: 26px;
+	margin: 0px 5px 0px 0px;
+	float: right;
+}
+
+.verification{
+	margin: 10px auto 0px;
+	width: 294px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #000000;
+	font-size: 16px;
+	line-height: 49px;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.verification .verification_icon{
+	color: #70aef3;
+	font-size: 26px;
+	margin: 0px 8px;
+	float: left;
+}
+
+.highlight{
+	border: 1px solid rgba(65,149,242,0.5);
+	-webkit-box-shadow: 0 0 3px rgba(65,149,242,0.7);  
+	-moz-box-shadow: 0 0 3px rgba(65,149,242,0.7);
+	box-shadow: 0 0 3px rgba(65,149,242,0.7);
+	border-collapse:separate !important;
+}
+
+.virtual_keyboard{
+	width: 670px;
+	position: absolute;
+	top: 51px;
+	right: -1px;
+	background: #dcdcdc;
+	z-index: 99;
+}
+
+.register_button a{
+	width: 294px;
+	height: 51px;
+	line-height: 51px;
+	text-align: center;
+	font-size: 24px;
+	background: #00a0e9;
+	display: block;
+	margin: 35px auto 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
